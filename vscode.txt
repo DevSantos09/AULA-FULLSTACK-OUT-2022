@@ -1,0 +1,121 @@
+Informações sobre o VSCode
+
+O Visual Studio Code é uma IDE (Integrated Development Environment) 
+que significa Ambiente de Desenvolvimento Integrado.
+Podemos abrir qualquer arquivo na nossa máquina virtual com o Visual Studio Code
+utilizando o comando code + Nome do arquivo.
+Temos na nossa interface inicial algumas áreas como a barra de atividade, menus,
+tutoriais, grupo de editores e login.
+Entendemos que a manipulação de pastas que o Visual Studio Code nos permite fazer
+é muito importante, conseguimos criar arquivos, pastas e se locomover entre elas
+dentro da própria interface.
+ 
+ "Use a Linha do Tempo. a TimeLine salva vidas :)"
+
+ ALT + clique no arquivo abre em exibição dividida
+ ALT + Z aplica quebra de linha ao texto ou (ver e quebra de texto)
+ ALT + Shift + F realiza identação do codigo
+ CTRL + S salva o arquivo 
+ CTRL + C copia o arquivo 
+ CTRL + V cola o arquivo
+ CTRL + P Busca arquivos do projeto 
+
+ CTRL + Shift + P apresenta ">" para visualizar funções
+ CTRL + p  @ apresenta os simbolos salvos. ex: em JS mostra as funções etc
+ CTRL + P :Linha vai para a linha escolhida do texto
+ CTRL + P >theme  ,edição de temas icones e cores. 
+
+ CTRL + Shift + L Seleciona textos igual e edita todos juntos 
+ CTRL + D seleciona as conhecidencias uma por uma 
+
+ CTRL + F find, barra de pesquisa para as palavras no arquivo
+ CTRL + H realiza a substituição de palavras e frases dentro do arquivo.
+
+ Seleção com mouse + CTRL + D + Back Space, deleta em coluna
+ 
+Shift + Tab formata tudo a esquerda
+
+ LF - Line Feed = Quebra de Linha 
+ CF- Carriage Return = Retorna ao inicio da linha 
+
+ Windows - CRLF
+ Linux - LF 
+ 0A hexadecimais quebra de linha 
+ Tabela ASCII
+ 0d 0a Windows
+ 0a Linux 
+
+
+ toggle = Alternar, é o true false, se estiver verdadeiro fica falso e vice/versa
+
+
+
+ CTRL + P ">" setting Json - workspace para configurações locais
+ - user para configurações globais
+
+
+settings.Json
+{
+ "files.exclude": {
+ "**/nomePasta": true,  // pasta oculta boleano "false" para visualizar
+ }
+}
+
+Extensões 
+prettier - formatador de codigo 
+Live Server - servidor que mantem a pagina atualizada, não sendo necessario o F5
+Markdown All in One - visualizador de Markdown
+vscode-icones - icones bonitos
+material icones - icones + bonitos ainda
+Dracula oficcial - IDE Estilizada 
+Auto Rename Tag - substitui as marcações no arquivo HTML <> 
+ Ao escrever a tag ele renomeia no final.
+
+JavaScript Snippet Pack - A extensão JavaScript Snippet Pack tem como função abreviar os trabalhos feitos no javascript. cl ja é console log. 
+
+
+
+                        Estudo de Snnippets
+
+    CTRL + P > configurar snippets de usuario // global ou //local
+{
+    "Print to console": {       // mensagem que irá aparecer 
+        "scope": "javascript,html", // onde será aplicado
+        "prefix": "start",       // nome que irei chamar o codigo
+        "body": ["console.log('Inicio do Projeto');"], // oque será feito
+        "description": "Log para start" // descrição do codigo snippet
+    }
+}
+
+
+
+Visibilidade dos menus no Visual Studio Code
+
+CTRL + P >menu bar  - visualização da barra de menu em cima "Arquivo, ajuda"
+CTRL + P >status bar - visualização da barra de baixo "erros de codigo, notificações"
+CTRL + P >activity bar - "View: Focus Activity Bar" - visualização da barra lateral "git, extensões" 
+
+
+//Lorem
+Lorem Ipsum é um recurso interessante para inserir textos fictícios em sua página.
+
+//Emmet Abbreviation
+
+O emmet abbreviation é um recurso capaz de inserir comandos a partir de pequenos textos.
+CTRL + Barra de espaço - visualizar o emmet 
+
+
+O sinal > representa que o emmet abbreviation irá inserir uma tag dentro da outra, enquanto o sinal + representa tags adjacentes.
+Para adicionar ids às tags basta adicionar um # e o nome do id após o item, da mesma forma para classes, utilizando o ponto.
+O emmet abbreviation possui uma infinidade de opções e modos de criar tags, fique a vontade para praticar, e sempre que tiver dúvida, volte nesta aula e confira as melhores práticas!
+
+
+
+
+
+//NodeJs
+que é depuração????? debug depurador
+//Na depuração um breakpoint é um ponto em que o programa irá pausar sua execução para que você possa acompanhar os próximos passos da execução.
+//comandos NodeJs
+node --version
+nmp --version 

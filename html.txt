@@ -1,0 +1,303 @@
+
+Estrutura de diretorios para html
+
+root {     pasta
+    readme.md     arquivo
+    index.html    arquivo
+    pages      pasta
+    images     pasta
+    src        pasta
+        css  pasta dentro de "src"
+    samples
+           test  pasta dentro de "samples"
+        
+
+
+code . abre o vscode pelo terminal
+
+
+AULA HTML
+
+         COMENT
+<!--ESTRUTURA BASICA HTML5-->
+
+//
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>AULA-HTML</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <h1>Olá</h1>
+</body>
+
+</html>
+//
+
+
+
+A tag <!DOCTYPE html> tem como intuito informar que este documento se trata de um documento HTML5.
+
+meta = um meta dado
+o dado é uma informação não processada.
+o meta dado é quando eu tenho uma informação sobre essa informaçãometa tag é aquela que explica melhor como o tag tem que ser descrito. 
+
+meta charset - caracteres especiais
+<meta charset="utf-8" />
+
+
+## ELEMENTOS SEMANTICOS
+
+<header> slogan, logo, banner, slide de apresentação, ferramenta de busca
+<nav> links que conduzem para paginas categorias, sub menu
+<section> <article>     conteudo principal  artigos dentro das sessoes 
+<aside> propagandas, publicidade
+<footer> rodapé, links de apoio
+<main>  define o conteúdo principal dentro do <body> em seu documento 
+<span>  um conteiner generico em linha para conteúdo fraseado
+
+não semantico aparece para as pesssoas, mas não tem diferença para a maquina.
+semantico -  apresenta seu objetivo e tem relevancia
+
+--------------ORGANIZAÇÃO DE HTML SEMANTICS----------------
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="sobre"></article>
+            <article id="pratos"></article>
+            <article id="reservas"></article>
+        </section>
+    </main>
+    <footer>
+        <p></p>
+        <form action="" method="post"></form>
+    </footer>
+    
+</body>
+
+
+ex:
+SEMANTICOS:
+strong - negrito
+em - emfase, italico
+
+Não SEMANTICOS:
+b - negrito
+i - italico
+
+##
+"<br />"    realiza quebra de linha
+"<hr />"    linha
+
+ul unerd list - lista não ordenada
+ol orned list - lista ordenada
+li list items - itens de lista
+
+type = como será a lista | a | A | i | 1  // ol padrão number
+type= "circle" | type="square" ul padrão bolinha pintada
+
+CTRL + ; para comentar uma linha
+
+dl - lista de definição 
+dt - definição termo
+dd - objetos
+
+
+<mark></mark>  marcador de texto
+<sup></sup>  superescrito
+<sub></sub>   subscrito
+<abbr title=""> texto </abbr>    passa mouse e vê informação.
+<bdo dir="rtl">texto</bdo>   Ltr >>>  rtl<<<< inverso frase
+<del><del/>    CORTA NO MEIO A PALAVRA, informação descontinuada
+<ins></ins>    sublinha a palavra,    informação adicionada
+&copy;   copringht 
+
+
+##ENDEREÇAMENTOS
+
+<a href="link">Texto</a>  - Para link externo 
+
+target="_blank"  - Para abrir a página em outra guia 
+ex:
+<a target="_blank" href="link">Texto</a>   
+
+https://www.google.com/search?q=zoologico   - parametro de pesquisa no google
+
+...Navegação entre topicos da página...
+id="X"    identificador
+<a href="#X">Texto</a>    - link
+
+.....navegação entre páginas.....
+      Mesma raiz
+
+ <a href="nomedoArquivo">Texto</a>
+
+ ....Em raizes diferentes....
+../  volta um nivel de diretorio 
+
+
+##INSERIR IMAGENS
+
+<img src="linkDaImagem" />
+
+width largura da imagem.
+alt é utilizado para inserir um texto alternativo à imagem caso ocorra algum problema em que não seja possível carregá-la.
+
+<source media="(min-width:600px)" srcset="images/cocktail_500.jpg">   // se no minimo 600 essa
+    <source media="(min-width:480px)" srcset="images/info_460.jpg">   // se no minimo 480 essa
+    <img src="images/coxinha_215.jpg">                                // se não essa
+ 
+ <figcaption> </figcaption>    - creditos autorais
+ <summary></summary>     -    sumario, titulo da lista ordenada
+ <details></details>         -     icone de rolamento para lista   container
+ <blockquote> </blockquote>     - afasta da direita o texto
+
+
+##TABELAS
+<table></table>  tabela
+<tr></tr>       Linha
+<th> </th>     Coluna
+<td> </td>        Informação da tabela
+<caption> </caption>      titulo da tabela 
+colspan      - quantidade de linhas da coluna da tabela que o texto ira usar  horizontal
+rowspan      -  quantidade de colunas nas linhas     vertical
+
+ex: <table>
+        <tr>
+            <th></th>
+        </tr>
+    </table>
+
+
+## FORMULARIO
+Para criar um formulário dentro do html, utiliza-se as tags <form>, <fieldset> e <legend>.
+Utiliza-se as tags <label> e <input> para definir o nome e a entrada do campo, respectivamente.
+Pode-se também criar botões por meio da tag <button>.
+
+form indica onde vai começar o formulario
+Label = explicação do campo
+input type=text   entrada de valor
+required não pode enviar vazio
+textarea - area para escrever
+METODOS:
+get- envia pela url
+post - envia pelo corpo hmtl
+input - 
+file  entrada de arquivos
+image - input de imagem
+accept - aceitar apenas x Formato
+Placeholder - texto de fundo
+readonly - leitura
+disable - desabilitado, não da para selecionar
+selected - pré selecionado nessa opção
+
+
+maxleng - maximo de caracteres
+autofocus - já vem esperando preecnher o form
+size -  largura 
+
+
+DATA-LIST-SELECIONAR:
+
+    <label for="entrada">Escolha sua entrada</label>
+    <input list="entrada_opt" name="entrada" id="entrada">
+    <datalist id="entrada_opt">
+
+        <option value="caldoMandioquinha">Caldo de Mandioquinha</option>
+        <option value="caldoSururu">Caldo de Sururu</option>
+
+    </datalist>
+
+options - opçoes do datalist
+optgroup - lista de opçoes 
+
+    
+
+##IMAGENS
+
+SVG
+PNG
+JPG
+SPAN para inserir imagem do lado
+
+-----------SONS-----------
+TAG’s: <video> , <source> e <audio>. 
+Atributos: src, type, autoplay, muted, controls. 
+Formatos de vídeo: MP4 e WEBM . 
+Formato de áudio: MP3. 
+
+------------------------
+##VIDEOS
+--CODIGUIM--
+<video width="" autoplay muted controls>
+        <source src="LINK" type="video/mp4">
+    </video>
+//
+autoplay - video começa a rodar automaticamente
+muted - video começa mutado padrão para regras 
+controls - controles do video :)
+source busca extensão e permite videos com extensoes diferentes
+
+//INSERIR UNICO VIDEO
+ <video width="50%" controls src="LINK" type="video/mp4"> </video>
+
+
+ ## INSERIR AUDIO
+ ----------
+ <audio controls src="LINK" type="audio/mp3"></audio>
+
+
+
+ #MICRO-DATA
+ --------------
+Especificacão para maquinas.
+
+Atributos RDFa: vocab, typeof e property. 
+Atributos JSON-LD: type, @context, name, datePublished, description e prepTime. 
+Recurso para buscar como será escrito os dados no HTML
+
+
+## STYLE
+----------
+style>
+        body {
+            width: 80%;
+            margin: auto;
+        }
+    </style>
+
+    para ter 10% em cada lado da pagina
+
+
+    --
+
+## IFRAME
+------------
+apresenta uma pagina em outra
+target = nome do iframe 
+href - pagina referencia 
+
+
+
+
+
+
+
+
+# o porqur da imagem nãoi aparecer no home, e són no servifor
+
+
+
+
